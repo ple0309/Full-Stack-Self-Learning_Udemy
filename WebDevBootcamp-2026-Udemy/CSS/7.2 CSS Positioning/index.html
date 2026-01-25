@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS Positioning Exercise</title>
+    <style>
+      /* Write your code here */
+      .red-circle {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px;
+        left: 250px;
+      }
+
+      .blue-box {
+        width: 500px;
+        height: 300px;
+        background-color: blue;
+        position: relative;
+        top: 200px;
+        left: 200px;
+      }
+    </style>
+  </head>
+  <!--There are 4 types in position CSS:
+  1) Static : HTML default flow when we set top or left it will not apply.
+  2) Relative : when we set top or left it will move relative position. 
+  3) Absolute : Position relative to nearest positioned ancestor or top left corner of webpage.
+  4) Fixed : Position relative to top left corner of browser window. It will alway show on the screen when we scroll up or down.
+
+  To visualize do appbrewery.github.io/css-positioning/
+
+  --Z-index will apply for absolute. It will be like that element will be floated on other stuffs. z-index : 0;(default) but z-index : -1;(it will be behind other things);
+  -->
+  <body>
+    <div class="blue-box">
+      <div class="red-circle"></div>
+    </div>
+  </body>
+</html>
