@@ -1,0 +1,34 @@
+/* Write your code here: */
+h1,
+h2 {
+  color: blueviolet;
+}
+
+/*Parent > child*/
+/*Box class will cover the child paragraph inside*/
+.box > p {
+  color: firebrick;
+}
+
+/*Descendant = Apply to a descendent of left side*/
+/*selector selector */
+.box li {
+  color: blue;
+}
+
+/*Chaining = Apply where ALL selectors are true
+selectorselector{
+}
+*/
+li.done {
+  color: seagreen;
+}
+
+/*Combining Combiners
+ancestor chain
+selector selectorselector{
+}
+*/
+ul p.done {
+  font-size: 0.5rem;
+}
