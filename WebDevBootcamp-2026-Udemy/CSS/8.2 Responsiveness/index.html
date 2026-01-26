@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness</title>
+    <style>
+      a {
+        display: block;
+      }
+    </style>
+  </head>
+  <!--
+  We will have 4 main ways to to responsive website.
+  
+
+  1) Media Queries
+  Example: 
+  @media (max-width: 600px)
+  {
+    /*CSS for screens below or equal to 600px wide */
+  }
+
+
+
+  2) CSS Grid 2D layout
+  Example:
+  .grid-container {
+    display: grid;
+
+    //We have two columns right here. They are both one fraction (1fr).
+    grid-template-columns: 1fr 1fr; 
+
+    //We have three rows: the first will be 100px height, the second = 200px height, the third will be 200px height;
+    grid-template-rows: 100px 200px 200px;
+  }
+
+
+
+  3) CSS Flexbox 1D layout vertical or horizontal.
+  Example:
+  flex: 1 
+  flex: 2 times another flex in CSS.
+  - Those are the ratio of each element when we set. 
+
+
+  4) External Frameworks e.g. Bootstrap
+  - It's not something that's built into CSS like Grid or Flexbox, 
+  but it's actually something that we have to bring in so other people's code 
+  that we're going to use.
+-->
+  <body>
+    <h1>Responsiveness Methods</h1>
+    <a href="./media-query.html">1. Media Queries</a>
+    <a href="./grid.html">2. CSS Grid</a>
+    <a href="./flexbox.html">3. CSS Flexbox</a>
+    <a href="./bootstrap.html">4. Bootstrap Framework</a>
+  </body>
+</html>

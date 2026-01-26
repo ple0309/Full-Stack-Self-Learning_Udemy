@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      /* .grid-container {
+    display: grid;
+
+    //We have two columns right here. They are both one fraction (1fr).
+    grid-template-columns: 1fr 1fr; 
+
+    //We have three rows: the first will be 100px height, the second = 200px height, the third will be 200px height;
+    grid-template-rows: 100px 200px 200px;
+  } */
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 200px 200px;
+        gap: 20px;
+      }
+
+      .first {
+        /*make the first div into 1 column when having 2 columns.*/
+        grid-column: span 2;
+      }
+
+      .card {
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Grid</h1>
+    <div class="grid-container">
+      <div class="first card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <!-- <div class="last card"></div> -->
+    </div>
+  </body>
+</html>
